@@ -1,0 +1,32 @@
+* Shrodinger's piece
+
+In quantum physics there's a mind experiment which intermediate
+result is a cat sitting in a closed box and being simultaneously 
+dead and alive. The cat's exact state can only be found out by 
+unboxing it :) i.e. -- by making a measurement.
+
+In QC we have discovered the same effect which happens when one 
+player capture a peer's cell.
+
+Consider the following situation
+
+- B - - -        - - - - -
+- - - - -  -B->  b - b - -
+- W - - -        - W - - -
+
+According to quantum rules the white player doesn't know in which
+cell his opponent's piece is. Next W moves
+
+- - - - -        - - - w -
+b - b - -  -W->  b - w - - 
+- W - - -        - - - - -
+
+Since the black piece is in superposition, it may happen that black
+is on the left cell and white cannot capture one and just moves on
+the lower right cell. At the same time, if black piece is on the
+left, white must capture one and move on the upper right cell. Both
+situations' superposition is shown on the picture above.
+
+After this the black piece is in shrodinger's cat situation -- it's
+simultaneously captured and not, and its exact state can only be get
+by measuring.

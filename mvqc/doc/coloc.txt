@@ -1,0 +1,33 @@
+* Quantum effect 
+
+In quantum world there exist effects that are unseen in non-quantum.
+It's the same in quantum checkers -- some positions that are impossible
+in classical checkers are commodity here. One of the simplest effects
+is the possibility for pieces of different colors to be in the same
+cell. With some probability, of course. Consider this position
+
+B - B - B
+- - - - -
+- - W - -
+
+In the above example let's check what happens if middle back piece
+moves and then the white one does.
+
+B - B - B      B - - - B
+- - - - -  ->  - b - b -
+- - W - -      - - W - -
+
+First, the black piece turns into the superposition-ed state.
+
+B - - - B      B - - - B
+- b - b -  ->  - x - x -
+- - W - -      - - - - -
+
+Next the white piece moves and, as it cannot capture none of the
+new middle black positions, it stepts into the same cells. And in
+cells marked with 'x'-s we have both -- black and white pieces
+tigether.
+
+Of course, this is probabilistic, once we measure either cell we
+immediatelly find out in which cell which piece is, but before it
+we should admit that both cells contain pieces of both colors.

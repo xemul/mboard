@@ -1,0 +1,31 @@
+* Indistinguishable pieces
+
+In quantum checkers pieces cannot be told from one another as if
+they were electrons or any other quantum particles. Look at this
+
+- - - - -
+- - W - W
+- - - W -
+
+First white move with top-left piece which turns into a superposition.
+When white move again they move with lower piece. This time this
+move is not quantum as this piece cannot move up-right.
+
+- w - w -      - w - w -
+- - - - W  ->  - - W - W
+- - - W -      - - - - -
+
+Now the interesting thing happens. White move again with lower left
+piece. This time it can move both left and right, but there's already
+a white piece on both of these cells. But since the piece there is
+with probability 1/2 and the pice that wants to move will be there
+with the same probability it can move on both and we have this
+
+- W - W -
+- - - - W
+- - - - -
+
+In the top row there are two pieces -- left and right -- but noone
+knows which one is where. There's even no sence is measuring a
+cell, as we do know that the piece is there. But we don't know
+which one.

@@ -1,0 +1,88 @@
+* Quantum checkers rules
+
+** Intro
+
+Quantum checkers is the extention of the regular checkers in which an
+individual piece (or man as it's sometimes called) behaves like a quantum
+objects. Two basic assumptions apply
+
+1. When touched, a piece moves in all possible ways it can
+2. One cannot tell one piece from another of the same color
+
+** What's shown on the board
+
+On the board not real pieces, but the probabilities of them to be in cells
+are shown, according to all the moves that have been done before.
+
+** Moving
+
+When playing one doesn't move pieces, instead it picks a cell from which
+he'd like to move a piece provided if it's there. Once picked, the cell is 
+examined by the program to get the probability of a piece to be there.
+
+*** Examining the cell
+
+If the probability of a piece to be in the picked cell is 1, the piece is
+considered to be there and it's moved (see below)
+
+If the probability is zero the piece is not there and the player is asked
+to pick another cell.
+
+If the probabity is between 0 and 1 the program needs to "measure" the cell
+to find out whether there's a piece or not.
+
+When measuring a cell the program rolls the dice and decides whether the
+piece is there or not. After this the state of the board is updated to only
+reflect the combinations of moves that could lead to the cell state that
+has just been measured.
+
+*** Actually moving the piece
+
+When making a move a piece takes all the moves that are possible according
+to the chosen rule set (you can play russian or english quantum checkers)
+and happens to be in a superposition of all of them with equal probability.
+The probabilities shown on the board are updated respectively.
+
+** Conflicts
+
+There are situations when your piece cannot move for some reason. E.g.
+when it's locked between other pieces or when there's another piece that
+can capture the peer (checkers rules say that you cannot refuse capturing).
+
+As we're playing the quantum checkers this situation may happen with some
+probability, i.e. -- while doing previous moves you might have happened
+in a locked situation, but as well might have not.
+
+*** Resolving conflicts
+
+Same as with deciding whether the piece is in a cell, the conflict probability
+enters the game.
+
+When the piece is locked with probability 1, the player is not allowed ot 
+move at all, just in any classical checkers.
+
+When it's locked with probability 0, the piece just  moves as described above.
+
+But when this probability is between 0 and 1 the program may take another 
+(remember -- the cell could have just been measured for the piece in it)
+"measurement" and checks whether there's a conflict or not.
+
+** Winning the game
+
+Winning (or losing) in quantum checkers is also probabilistic, as while
+capturing pieces pleyers don't know exactly whether he's captured or not
+untill the relevant measurement happens.
+
+So during the game the program evaluates the probability for each player
+to win.
+
+While it's 0 the game goes on, but once it grows the respective player
+is immediately won and the peer is lost, but, there are two types of 
+this ending in quantum checkers -- classic won/lose and the quantum one.
+
+The former one happens when the probability of the event is 1, which means
+that the situation on the board means "game over" in all the potential
+positions it can happen in. The latter one means, that possibly the game
+can go on, but once a measurement happens one of the players will be declared
+as winner and the other one as loser. Not to make win/lose decesion depend
+on a chance, the game stops and the quantum win/lose is declared.

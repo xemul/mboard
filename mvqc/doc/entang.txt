@@ -1,0 +1,37 @@
+* Entanglement
+
+One of the interesting effects in quantum mechanics is
+entanglement effect. It says that sometimes the state of
+two or more particles depends on each other in a way, that
+measuring the state of one particle immediately gives you
+the state of another, which, in non-entangled situation,
+you wouldn't know and would have to measure separately.
+
+In QC pieces can be entangled too, let's see one example
+of how this can happen.
+
+- B - - - -     - - - - - -
+- - - - - -  -> b - b - - -
+- - - W - -     - - - W - -
+
+B moved and happened in two cells with probability 1/2.
+Now it's W move. It can either capture B on the right
+cell ir just step into it if B is really on the left.
+
+- w - - - -
+b - w - - -
+- - - - - -
+
+Now we can try to measure the cell in which B can be.
+Not, that there's neither white piece in this cell NOR
+it has ever been there. If we measure this cell two
+results are possible
+
+- - - - - -    - W - - - -
+B - W - - - OR - - - - - -
+- - - - - -    - - - - - -
+
+We've found out the B state -- it's either dead or alive.
+But at the same time, without really messing with it,
+we've also found out the position of the white piece. Now
+we know where it is.

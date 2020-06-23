@@ -1,0 +1,36 @@
+* Tactics
+
+Quantum mechanics has several interpretations that help us
+understand what's going on there. In quantum checkers there
+is the way to imagine what happens on the board. We call it
+'multiboard playing'.
+
+When moving a piece imagine that you're doing a simultaneous
+display, but instead of making independen moves, you pick
+the same piece for all the boards you play on and move it
+in all the different ways.
+
+For example, if we start with this position
+
+- - - B -
+- - - - -
+- W - - -
+
+and whites move, we can imagine two boards we play on and the
+resulting positions would be these
+
+- - - B -  - - - B -
+W - - - -  - - W - -
+- - - - -  - - - - -
+
+next black move. On the first board there are two options and
+on the 2nd there's only one valid move. And in the end we have
+3 boards we play on.
+
+- - - - -  - - - - -  - - - - -
+W - B - -  W - - - B  - - - - -
+- - - - -  - - - - -  - B - - -
+
+Of course, sometimes some boards can go away, this happens when
+measurements take place. But in the analogy we draw this means
+that some opponents in the multiboard play just give up.

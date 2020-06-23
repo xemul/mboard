@@ -1,0 +1,59 @@
+* Tunnel effect
+
+In classical physics if a particle approaches a potential barrier
+with the energy lower, that the barrier's it cannot pass one and
+reflects backward. An example of it is a ball rolling towards a
+small hill. If the kinetic enegry of the ball is small enough,
+then it would roll up the hill a little bit, but then will slow
+down, stop and start rolling back. Be the ball a quantum particle
+there would have been a probability for it to surmount the hill
+and go on moving on its opposite side without actually passing
+by the hill's top.
+
+In QC we can observe similar effect -- the position, which in
+classical checkers can be played by someone to capture the peer
+for sure, may result in the peer to bypass this threat.
+
+Look at the position below.
+
+- - B - -
+- - - - -
+- - - - -
+- W - - -
+
+If W moves, then in classical checkers it has a way to capture B
+for sure -- just move up-right and that's it. Whatever move B
+then takes it will be in a capturable position. In QC it's 
+possible, that B avoids capruting and goes beyond W line.
+
+- - B - -      - - - - -
+- - - - -      - b - b -
+w - w - -  ->  w - w - -
+- - - - -      - - - - -
+
+Now W can only move it being measured. Measurement can happen on
+either cell white can be on -- left or right. Let's check two
+possibilities.
+
+First -- white is on the right. While B's position is not known
+its exact location doesn't matter -- be it on the left or on the
+right cell, white would captrure one.
+
+- - - - -      w - - - w
+- b - b -      - - - - -
+- - W - -  ->  - - - - -
+- - - - -      - - - - -
+
+Now let's look at the 2nd possibility -- when W is on the left.
+In this case B'l real location matters. If it's on the left cell
+white would capture one and move on the top-most row, but (!) if
+B is on the right white can just move one cell ahead.
+
+- - - - -      - - w - -
+- b - b -      - w - b -
+W - - - -  ->  - - - - -
+- - - - -      - - - - -
+
+In this situation B is shrodinger piece, but still there's a
+possibility that is survives and goes ahead. Whether or not
+B has tunneled throught W will be determined after B's measurement.
